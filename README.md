@@ -23,10 +23,11 @@ Wait Wait-For-It itself has no clue on what service it should wait. Then how wou
     ```
     // If you know the url of the service.
     // For Example: bolt://172.23.238.135
+
     mongodb://172.23.238.135
 
-    // If host and port are present as the environment variable.
-    // Replace <HOST> and <PORT> with the environment variable.
+    // If host and port are present as the environment variable. MONGO_HOST and MONGO_PORT are the environmental variables here
+
     $MONGO_HOST:$MONGO_PORT
 
     ```
