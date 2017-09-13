@@ -16,18 +16,19 @@ Now Wait-For-It basically attempts to solve the problem by listening on the url 
 
 Wait Wait-For-It itself has no clue on what service it should wait. Then how would it work?. Well it's super simple. It involves two simple steps:
 
-1. Define Services for which you want to wait in wait.txt
+1. Define Services for which you want to wait in wait.txt.
 
     ### wait-for-it/wait.txt ###
 
     ```
     // If you know the url of the service.
-    // For Example: bolt://localhost
-    URL_OF_SERVICE
+    // For Example: bolt://172.23.238.135
+    mongodb://172.23.238.135
 
     // If host and port are present as the environment variable.
-    // Replace HOST and PORT with the environment variable.
-    --host=$(echo $HOST) --port=$(echo $PORT)
+    // Replace <HOST> and <PORT> with the environment variable.
+    $MONGO_HOST:$MONGO_PORT
+
     ```
 
 2. Use the wait service in wait-for-it.
