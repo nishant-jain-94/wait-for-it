@@ -36,7 +36,7 @@ Wait Wait-For-It itself has no clue on what service it should wait. Then how wou
     ```
     version: '2'
     services:
-        wait:
+      wait:
         volumes:
-            - ./wait-for-it:/wait-for-it
+          - ./wait-for-it:/dependencies
     ``` 

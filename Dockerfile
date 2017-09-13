@@ -16,11 +16,11 @@ RUN git clone https://github.com/vishnubob/wait-for-it.git
 WORKDIR /wait-for-it
 
 # Mount wait-for-it volume 
-VOLUME /wait-for-it
+VOLUME /dependencies
 
 # Granting permissions to execute wait.sh
 RUN chmod +x ./wait-for-it.sh
 
 # Reading line by line from wait.txt and waiting infinitely for each service
-ENTRYPOINT while read -r line; do ./wait-for-it.sh -t 0 $line; done < wait.txt
+ENTRYPOINT while read -r line; do ./wait-for-it.sh -t 0 $line; done < /dependencies/wait.txt
 
