@@ -1,4 +1,4 @@
-# Wait-For-It #
+# Wait-For-It [![](https://images.microbadger.com/badges/version/jainnish94/wait-for-it.svg)](https://microbadger.com/images/jainnish94/wait-for-it "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/jainnish94/wait-for-it.svg)](https://microbadger.com/images/jainnish94/wait-for-it "Get your own image badge on microbadger.com")
 
 Wait for it is a simple dockerized version of the script [wait-for-it](https://github.com/vishnubob/wait-for-it) build at [Stackroute](http://stackroute.in/).
 

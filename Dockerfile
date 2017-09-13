@@ -2,6 +2,9 @@
 FROM alpine:latest
 
 MAINTAINER Nishant Jain <nishantkumarajain@gmail.com>
+LABEL version=1.0
+LABEL description="Used to synchronize interdependent services"
+
 
 # 1. Install Netcat utility on Alpine Linux
 # 2. Install GIT utility on Alpine Linux
