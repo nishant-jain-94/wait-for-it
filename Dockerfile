@@ -1,7 +1,7 @@
 # Importing from alpine linux. 
 FROM alpine:latest
 
-MAINTAINER Nishant Jain <nishantkumarajain@gmail.com>
+LABEL maintainer="Nishant Jain <nishantkumarajain@gmail.com>"
 LABEL version=1.0
 LABEL description="Used to synchronize interdependent services"
 
