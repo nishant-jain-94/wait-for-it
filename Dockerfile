@@ -22,5 +22,4 @@ VOLUME /dependencies
 RUN chmod +x ./wait-for-it.sh
 
 # Reading line by line from wait.txt and waiting infinitely for each service
-ENTRYPOINT while read -r line; do ./wait-for-it.sh -t 0 $line; done < /dependencies/wait.txt
-
+CMD while read -r line; do eval ./wait-for-it.sh $line; done < /dependencies/wait.txt
